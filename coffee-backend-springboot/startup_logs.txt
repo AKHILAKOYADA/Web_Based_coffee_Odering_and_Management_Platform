@@ -1,0 +1,95 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.coffee:cafe >---------------------------
+[INFO] Building Coffee House 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.7.18:run (default-cli) > test-compile @ cafe >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ cafe ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ cafe ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ cafe ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory D:\Cafe\coffee-backend-springboot\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ cafe ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:2.7.18:run (default-cli) < test-compile @ cafe <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.7.18:run (default-cli) @ cafe ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2026-02-15 16:50:00.069  INFO 4320 --- [           main] com.coffee.cafe.CafeApplication          : Starting CafeApplication using Java 1.8.0_202 on Akhila with PID 4320 (D:\Cafe\coffee-backend-springboot\target\classes started by Akhila koyada in D:\Cafe\coffee-backend-springboot)
+2026-02-15 16:50:00.071  INFO 4320 --- [           main] com.coffee.cafe.CafeApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-02-15 16:50:00.406  INFO 4320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 16:50:00.433  INFO 4320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2026-02-15 16:50:00.825  INFO 4320 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5005 (http)
+2026-02-15 16:50:00.830  INFO 4320 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-15 16:50:00.830  INFO 4320 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-15 16:50:00.910  INFO 4320 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-15 16:50:00.910  INFO 4320 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 818 ms
+2026-02-15 16:50:00.974  INFO 4320 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-15 16:50:00.990  INFO 4320 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-15 16:50:01.039  INFO 4320 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-15 16:50:01.150  INFO 4320 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-15 16:50:01.226  INFO 4320 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-15 16:50:01.231  INFO 4320 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-02-15 16:50:01.552  INFO 4320 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-15 16:50:01.556  INFO 4320 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 16:50:01.759  WARN 4320 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 16:50:01.841  INFO 4320 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3302035b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c5747db, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b9e69fb, org.springframework.security.web.header.HeaderWriterFilter@a323a5b, org.springframework.web.filter.CorsFilter@750cd36d, org.springframework.security.web.authentication.logout.LogoutFilter@1fc0d9b4, com.coffee.cafe.security.JwtFilter@79e10fb4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c579202, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@766b6d02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c8ff67, org.springframework.security.web.session.SessionManagementFilter@650a1aff, org.springframework.security.web.access.ExceptionTranslationFilter@fe8aaeb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c5a91b4]
+2026-02-15 16:50:01.992  WARN 4320 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 5005 is already in use
+2026-02-15 16:50:01.993  INFO 4320 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 16:50:01.994  INFO 4320 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-15 16:50:01.998  INFO 4320 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-15 16:50:01.999  INFO 4320 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-15 16:50:02.006  INFO 4320 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-15 16:50:02.015 ERROR 4320 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 5005 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 5005 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.839 s
+[INFO] Finished at: 2026-02-15T16:50:02+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.7.18:run (default-cli) on project cafe: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

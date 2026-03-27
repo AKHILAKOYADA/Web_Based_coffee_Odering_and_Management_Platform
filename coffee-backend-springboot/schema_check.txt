@@ -1,0 +1,29 @@
+Field	Type	Null	Key	Default	Extra
+id	bigint	NO	PRI	NULL	auto_increment
+degree	varchar(255)	YES		NULL	
+institution	varchar(255)	YES		NULL	
+passing_year	varchar(255)	YES		NULL	
+user_id	bigint	YES		NULL	
+Field	Type	Null	Key	Default	Extra
+id	int	NO	PRI	NULL	auto_increment
+first_name	varchar(100)	NO		NULL	
+last_name	varchar(100)	NO		NULL	
+email	varchar(150)	NO	UNI	NULL	
+role	enum('admin','cafe_owner','customer','chef','waiter')	YES		customer	
+dob	date	NO		NULL	
+gender	enum('male','female','other')	NO		NULL	
+govt_proof_id	varchar(50)	NO		NULL	
+govt_proof_file	varchar(255)	YES		NULL	
+plot_no	varchar(50)	NO		NULL	
+street	varchar(255)	NO		NULL	
+city	varchar(100)	NO		NULL	
+pincode	varchar(10)	NO		NULL	
+password_hash	varchar(255)	YES		NULL	
+is_verified	tinyint(1)	YES		0	
+is_approved	tinyint(1)	YES		0	
+is_profile_complete	tinyint(1)	YES		1	
+must_reset_password	tinyint(1)	YES		1	
+status	enum('active','inactive')	YES		active	
+created_at	timestamp	YES		CURRENT_TIMESTAMP	DEFAULT_GENERATED
+updated_at	timestamp	YES		CURRENT_TIMESTAMP	DEFAULT_GENERATED on update CURRENT_TIMESTAMP
+landmark	varchar(255)	YES		NULL	

@@ -1,0 +1,3 @@
+id	email	role
+7	admin@coffeehouse.com	admin
+11	akhilakoyada22@gmail.com	customer

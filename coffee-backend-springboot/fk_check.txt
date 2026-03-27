@@ -1,0 +1,4 @@
+TABLE_NAME	COLUMN_NAME	CONSTRAINT_NAME
+bookings	user_id	bookings_ibfk_1
+cafes	owner_id	cafes_ibfk_1
+orders	user_id	orders_ibfk_1
